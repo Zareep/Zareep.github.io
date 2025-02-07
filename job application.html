@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Application Form</title>
+</head>
+<body>
+    <h2>Job Application Form</h2>
+    <form action="https://dev.fare4z.com" method="get" enctype="multipart/form-data">
+
+    <p>    
+        <label for="fullname">Full Name:</label>
+        <input type="text" id="fullname" name="fullname" required><br><br>
+    </p>
+    <p>        
+        <label for="email">Email Address:</label>
+        <input type="email" id="email" name="email" required><br><br>
+    </p>
+    <p>    
+        <label for="phone">Phone Number:</label>
+        <input type="tel" id="phone" name="phone" pattern="[0-9]{10,15}" required>
+        <small>Format: 10-15 digits</small><br><br>
+    </p>    
+    <p>
+        <label for="position">Position Applied For:</label>
+        <select id="position" name="position" required>
+            <option value="">Select a position</option>
+            <option value="developer">Developer</option>
+            <option value="designer">Designer</option>
+            <option value="manager">Manager</option>
+        </select><br><br>
+    </p>
+    <p>
+        <label for="startdate">Available Start Date:</label>
+        <input type="date" id="startdate" name="startdate" required><br><br>
+    </p>
+    <p>    
+        <label for="resume">Resume Upload:</label>
+        <input type="file" id="resume" name="resume" required><br><br>
+    </p>
+    <p>    
+        <label for="coverletter">Cover Letter:</label><br>
+        <textarea id="coverletter" name="coverletter" rows="4" required></textarea><br><br>
+    </p>
+    <p>    
+        <p>Employment Type Preference:</p>
+        <input type="radio" id="fulltime" name="employment_type" value="fulltime" required>
+        <label for="fulltime">Full-time</label>
+        <input type="radio" id="parttime" name="employment_type" value="parttime">
+        <label for="parttime">Part-time</label>
+        <input type="radio" id="internship" name="employment_type" value="internship">
+        <label for="internship">Internship</label><br><br>
+    </p>
+        
+    <p>
+        <p>Skills:</p>
+        <input type="checkbox" id="html" name="skills[]" value="HTML">
+        <label for="html">HTML</label>
+        <input type="checkbox" id="css" name="skills[]" value="CSS">
+        <label for="css">CSS</label>
+        <input type="checkbox" id="javascript" name="skills[]" value="JavaScript">
+        <label for="javascript">JavaScript</label>
+        <input type="checkbox" id="python" name="skills[]" value="Python">
+        <label for="python">Python</label>
+        <input type="checkbox" id="others" name="skills[]" value="Others">
+        <label for="others">Others</label><br><br>
+    </p>
+
+    <p>
+        <button type="submit">Submit</button>
+        <button type="reset">Kosongkan</button>
+    </p>
+
+    </form>
+</body>
+</html>
