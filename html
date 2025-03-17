@@ -54,6 +54,72 @@
                 }
             }
 
+            function checkLogin () {
+                var username = prompt ('Username');
+                var password = prompt ('Password');
+
+                if (username == "bon") {
+                    alert('User Exists');
+
+                    if (password == "bonbon") {
+                        alert('Success Login');
+                    } else {
+                        alert ('Wrong Password');
+                    }
+                } else if (username == "admin") {
+                    alert ('Admin')
+                }
+                else {
+                    alert ('Error Login');
+                }
+
+            }
+
+
+function checkGrade() {
+    let grade = prompt("Enter your grade: "); 
+
+switch (grade) {
+        case "A":
+            msg = "Excellent!";
+            console.log(msg); 
+            alert(msg);
+            break; 
+        case "B":
+            msg = "Good!";
+            console.log(msg);
+            alert(msg); 
+            break;
+        case "C":
+            msg = "Fair!";
+            console.log(msg); 
+            alert(msg); 
+            break; 
+        case "D":
+            msg = "Poor!";
+            console.log(msg);
+            alert(msg); 
+            break;
+        default:
+            msg = "Invalid grade!";
+            console.log(msg);
+            alert(msg); 
+            break;
+}
+}            
+
+
+function checkNumber() {
+    let number = prompt("Please enter number");
+    let result = number % 2;
+    if (result === 0) {
+        alert (number + " is even. ");
+    } else {
+        alert (number + " is odd. ");
+    }
+}
+
+
 
         </script>
 </body>
