@@ -37,8 +37,35 @@
 
     </div>
 
-    <script src="Function.js"></script>
+    <div id="event">
+
+        <h2>Event Handling</h2>
+
+        <button onclick = "alert('Button Clicked!')">Click Me!</button> <br>
+        <button id="klik">Tekan Saya!</button> <br>
+
+        <p id="welcome">Welcome</p>
+
+        <img src="https://www.betterwithdairy.com/sites/default/files/2025-02/What_Does_Dairy_Cow_Eat.webp" width="250px" id="cow"> <br>
+
+        <!--Event onfocus / onblur-->
+
+        <input type="text" id="nama" placeholder="Enter your name" onfocus="this.style.backgroundColor='lightblue'" onblur="this.style.backgroundColor=''"> <br>
+        <input type="text" id="nric" placeholder="Enter ur IC number"> <br>
+
+        <br>
+
+        <select onchange="checkJabatan()" id="jabatan">
+            <option value="">Choose One</option>
+            <option value="DDT">DDT</option>
+            <option value="DIT">DIT</option>
+        </select>
+
+    </div>
+
+    <script src="function.js"></script>
 
 
 </body>
 </html>
+
